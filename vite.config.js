@@ -9,7 +9,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
-    }
+    },
+    extensions: ['.js', '.jsx', '.json']
   },
   build: {
     outDir: 'dist',
