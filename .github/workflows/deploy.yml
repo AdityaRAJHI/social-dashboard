@@ -24,18 +24,13 @@ jobs:
           node-version: '18'
           cache: 'npm'
 
-      - name: Create logs directory 📁
-        run: mkdir -p logs
-
       - name: Install dependencies 📦
         run: |
           npm install
-          npm install -g vite
-          npm install -g gh-pages
+          npm ci
 
       - name: Build 🔧
-        run: |
-          npm run build:vite
+        run: npm run build
         env:
           NODE_ENV: production
 
