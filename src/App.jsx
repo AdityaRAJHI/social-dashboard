@@ -8,8 +8,10 @@ import Settings from './pages/Settings';
 import Landing from './pages/Landing';
 
 function App() {
+  const basename = import.meta.env.DEV ? '/' : '/social-dashboard';
+  
   return (
-    <Router>
+    <Router basename={basename}>
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route element={<MainLayout />}>
@@ -19,6 +21,7 @@ function App() {
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/settings" element={<Settings />} />
         </Route>
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
   );

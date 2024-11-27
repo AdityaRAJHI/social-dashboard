@@ -11,8 +11,16 @@ export default defineConfig({
     sourcemap: true,
     rollupOptions: {
       output: {
-        manualChunks: undefined
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+          ui: ['@headlessui/react', '@heroicons/react'],
+          animations: ['framer-motion']
+        }
       }
     }
+  },
+  server: {
+    port: 5173,
+    open: true
   }
 })
