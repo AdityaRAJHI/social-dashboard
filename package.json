@@ -6,36 +6,33 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:vite": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@headlessui/react": "^2.2.0",
-    "@heroicons/react": "^2.2.0",
-    "autoprefixer": "^10.4.20",
-    "framer-motion": "^11.12.0",
-    "postcss": "^8.4.49",
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.1",
+    "autoprefixer": "^10.4.17",
+    "framer-motion": "^11.0.3",
+    "postcss": "^8.4.35",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.3.0",
+    "react-icons": "^5.0.1",
     "react-router-dom": "^6.22.0",
-    "recharts": "^2.13.3",
-    "tailwindcss": "^3.4.15"
+    "recharts": "^2.12.0",
+    "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
-    "@eslint/js": "^9.15.0",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^9.15.0",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-react-refresh": "^0.4.14",
-    "gh-pages": "^6.2.0",
-    "globals": "^15.12.0",
-    "vite": "^6.0.1"
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "gh-pages": "^6.1.1",
+    "vite": "^5.1.0"
   }
 }
