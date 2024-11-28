@@ -4,7 +4,7 @@ import Dashboard from '@/pages/Dashboard.jsx';
 import Analytics from '@/pages/Analytics.jsx';
 import Audience from '@/pages/Audience.jsx';
 import Schedule from '@/pages/Schedule.jsx';
-import Settings from '@/pages/Settings.jsx';
+import Settings from '@/pages/settings.jsx';
 import Landing from '@/pages/Landing.jsx';
 
 function App() {
