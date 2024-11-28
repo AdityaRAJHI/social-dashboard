@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import MainLayout from './layouts/MainLayout.jsx';
-import Dashboard from './pages/Dashboard.jsx';
-import Analytics from './pages/Analytics.jsx';
-import Audience from './pages/Audience.jsx';
-import Schedule from './pages/Schedule.jsx';
-import Settings from './pages/Settings.jsx';
-import Landing from './pages/Landing.jsx';
+import MainLayout from '@/layouts/MainLayout.jsx';
+import Dashboard from '@/pages/Dashboard.jsx';
+import Analytics from '@/pages/Analytics.jsx';
+import Audience from '@/pages/Audience.jsx';
+import Schedule from '@/pages/Schedule.jsx';
+import Settings from '@/pages/Settings.jsx';
+import Landing from '@/pages/Landing.jsx';
 
 function App() {
   const basename = import.meta.env.DEV ? '/' : '/social-dashboard';

@@ -8,7 +8,8 @@ export default defineConfig({
   base: process.env.NODE_ENV === 'production' ? '/social-dashboard/' : '/',
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src')
+      '@': path.resolve(__dirname, './src'),
+      'pages': path.resolve(__dirname, './src/pages')
     },
     extensions: ['.mjs', '.js', '.mts', '.ts', '.jsx', '.tsx', '.json']
   },
